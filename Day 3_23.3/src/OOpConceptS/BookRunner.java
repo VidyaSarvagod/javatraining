@@ -2,9 +2,12 @@ package OOpConceptS;
 
 public class BookRunner {
    public static void main(String[] args){
-       Book javabook=new Book();
-       Book pythonbook=new Book();
-       Book htmlbook=new Book();
+       Book javabook=new Book(100);
+       Book pythonbook=new Book(200);
+       Book htmlbook=new Book(300);
+       System.out.println(javabook.getNoOfCopies());
+       System.out.println(htmlbook.getNoOfCopies());
+       System.out.println(pythonbook.getNoOfCopies());
 
        javabook.setNoOfCopies(10);
        javabook.increasecopy(10);
