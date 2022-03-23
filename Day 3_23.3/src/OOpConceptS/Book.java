@@ -16,11 +16,12 @@ public class Book {
         }
 
     }
-    public void increasespeed(int howmuch){
+    public void increasecopy(int howmuch){
         this.noOfCopies=this.noOfCopies+howmuch;
         System.out.println(this.noOfCopies);
     }
-    public void Decrease(int howmuchdecrese){
+    public void Decreasecopy(int howmuchdecrese){
         this.noOfCopies=this.noOfCopies-howmuchdecrese;
+        System.out.println(this.noOfCopies);
     }
 }
