@@ -7,6 +7,11 @@ public class BookRunner {
        Book htmlbook=new Book();
 
        javabook.setNoOfCopies(10);
+       javabook.increasespeed(100);
+       javabook.Decrease(50);
+
+      // pythonbook.setNoOfCopies(20);
+      // htmlbook.setNoOfCopies(30);
       // System.out.println(javabook.getNoOfCopies());
 
       // pythonbook.setNoOfCopies(30);
