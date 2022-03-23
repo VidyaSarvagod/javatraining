@@ -2,6 +2,9 @@ package OOpConceptS;
 
 public class Book {
     private int noOfCopies;
+    Book(int copy){
+        this.noOfCopies=copy;
+    }
 
     public int getNoOfCopies() {
         return noOfCopies;
