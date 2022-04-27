@@ -1,0 +1,54 @@
+package ExceptionHandling;
+
+// Java program to demonstrate exception is thrown
+// how the runTime system searches th call stack
+// to find appropriate exception handler.
+
+public class DivideByError extends RuntimeException
+    {
+
+        static int divideByZero ( int a, int b)
+        {
+        int i = a / b;
+
+        return i;
+        }
+
+
+        static int computeDivision ( int a, int b){
+
+        int res = 0;
+
+        try {
+            res = divideByZero(a, b);
+        }
+
+        catch (NumberFormatException ex) {
+            System.out.println("NumberFormatException is occurred");
+        }
+        return res;
+    }
+
+
+        public static void main (String args[]){
+
+        int a = 1;
+        int b = 0;
+
+        try
+        {
+            int i = computeDivision(a, b);
+
+        }
+        catch (ArithmeticException ex)
+        {
+
+            System.out.println(ex.getMessage());
+        }
+    }
+
+    }
+
+
+
+
